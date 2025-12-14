@@ -18,15 +18,15 @@ export default function Footer() {
                 </iframe>
                 </div>
                 {/* Form Section */}          
-                <div className="w-1/2 flex flex-col">
-                    <form action="" className=" gap-4">
+                <div className="w-1/2 h-max">
+                    <form action="" className="flex flex-col gap-4">
                         <div className="flex flex-col gap-2 w-full " id="field_nama">
                             <label htmlFor="nama" className="label">Nama: </label>
                             <input type="text" name="nama" id="nama" className="input" placeholder="Masukkan Nama kalian (Ngga harus nama asli kok >_<)"/>
                         </div>
                         <div className="flex flex-col gap-2 w-full " id="field_message">
                             <label htmlFor="nama" className="label">Pesan: </label>
-                            <textarea name="message" id="message" className="input h-auto" placeholder="Berikan pesan kalian ke kami :)"></textarea>
+                            <textarea name="message" id="message" className="input h-[150px] resize-none" placeholder="Berikan pesan kalian ke kami :)"></textarea>
                         </div>
                         <button type="submit" className="btn-secondary">Kirim</button>
                     </form>
@@ -34,9 +34,10 @@ export default function Footer() {
                 
             </div>
             <div className="w-full h-px bg-[#D5DEEF] mt-[100px] mb-3"></div>
+            {/* Copyright */}
             <div className="flex justify-between pl-10 pr-10 text-white">
                 <p className="font-bold text-[1.25rem]">&copy; Copyright Masterjava <span>{year}</span></p>
-                <a href="https://www.instagram.com/masterjava.skanifo/" className="text-[1.25rem]">Instagram Kami</a>
+                <a href="https://www.instagram.com/masterjava.skanifo/" className="text-[1.25rem] underline underline-offset-8">Instagram Kami</a>
                 <p className="font-poppins text-[1.25rem]">Made By: <span className="font-poppins font-bold">XIIRPL 3'23 Team</span></p>
             </div>
         </section>
