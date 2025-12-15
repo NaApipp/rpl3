@@ -1,27 +1,18 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Headphones, Menu, X } from "lucide-react";
+import { useBgm } from "../hooks/useBgm";
 
 export default function Navbar() {
+  // BGM Function
+  const { audioRef, isPlaying, music } = useBgm();
   const [isOpen, setIsOpen] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
+  
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const music = () => {
-    if (!audioRef.current) return;
-
-    if (!isPlaying) {
-      audioRef.current.play();
-    } else {
-      audioRef.current.pause();
-    }
-
-    setIsPlaying(!isPlaying);
-  };
+  
   const menuItems = [
     { id: "home", name: "Home", href: "#home" },
     { id: "struktur", name: "Struktur Kelas", href: "#struktur-kelas" },
@@ -30,7 +21,7 @@ export default function Navbar() {
   ];
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full bg-[#395886] text-white z-10">
+      <nav className="bg-[#395886] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
@@ -107,7 +98,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <audio ref={audioRef} src="/bgm/bgm-waitingv2.mp3" loop></audio>
+      <audio ref={audioRef} src="asset/music/bgmv1-fix.mp3" loop></audio>
     </>
   );
 }
