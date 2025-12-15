@@ -1,4 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); /* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"); /* Luckiest Guy */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"); /* Bebas Neue */
+
 @import "tailwindcss";
+
+@layer base {
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-gray-400);
+    padding-left: 8px;
+    font-weight: 400;
+    font-family: var(--poppins);
+  }
+}
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+}
+
+@layer components {
+  .input {
+    @apply rounded-[10px] bg-white text-gray-950 pl-2 p-2;
+  }
+  .label {
+    @apply font-poppins font-semibold text-[1.25rem];
+  }
+  .btn-secondary {
+    @apply bg-[#8AAEED] font-poppins font-semibold p-3 rounded-[10px] border-3 border-white cursor-pointer;
+  }
+}
+
+
 
 :root {
   --background: #ffffff;
@@ -22,5 +54,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  font-family: var(--font-poppins), sans-serif;
+} 
