@@ -34,7 +34,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-            <img src="favicon.ico" alt="logo" className="w-16 h-16" />
+            <img src="asset/image/logo/transaparant-logo.png" alt="logo" className="w-16 h-16" />
             <span className="text-md md:text-lg lg:text-lg font-mono font-bold whitespace-nowrap">
               MASTERJAVA RPL 3'23
             </span>
