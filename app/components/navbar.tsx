@@ -17,6 +17,7 @@ export default function Navbar() {
     { id: "home", name: "Home", href: "#home" },
     { id: "struktur", name: "Struktur Kelas", href: "#struktur-kelas" },
     { id: "prestasi", name: "Prestasi", href: "#prestasi" },
+    { id: "member", name: "Member", href: "#member" },
     { id: "gallery", name: "Gallery", href: "#gallery" },
   ];
   return (
