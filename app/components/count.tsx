@@ -1,17 +1,17 @@
 export default function Count() {
     return (
-        <div className="flex bg-[#638ECB] pt-10 pb-10 gap-52 justify-center rounded-lg text-white">
-            <div className="laki text-center">
-                <p className="text-[70px] font-extralight">36</p>
-                <p className="text-[50px] font-bold">SISWA AKTIF</p>
+        <div className="count flex bg-[#638ECB] pt-10 pb-10 gap-52 justify-center rounded-lg text-white">
+            <div className="aktif text-center">
+                <p className="count">36</p>
+                <p className="head-count">SISWA AKTIF</p>
             </div>
             <div className="laki text-center">
-                <p className="text-[70px] font-extralight">15</p>
-                <p className="text-[50px] font-bold">LAKI-LAKI</p>
+                <p className="count">15</p>
+                <p className="head-count">LAKI-LAKI</p>
             </div>
-            <div className="laki text-center">
-                <p className="text-[70px] font-extralight">21</p>
-                <p className="text-[50px] font-bold">PEREMPUAN</p>
+            <div className="perempuan text-center">
+                <p className="count">21</p>
+                <p className="head-count">PEREMPUAN</p>
             </div>
         </div>
     )

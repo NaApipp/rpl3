@@ -1,5 +1,7 @@
 export default function Footer() {
+    // Year Function (biar selalu update) 
   const year = new Date().getFullYear();
+
   return (
     <section className="bg-[#395886] pt-10 pb-10">
       {/* Container Section  */}
@@ -13,9 +15,9 @@ export default function Footer() {
               alt="SKanifo Logp"
               className="w-[70px] h-auto"
             />
-            <p className="font-bold text-[20px]">SMKN 4 Kendal</p>
+            <p className="font-poppins font-bold text-[20px]">SMKN 4 Kendal</p>
           </div>
-          <p className="w-1/2 mt-5 font-medium">
+          <p className="w-1/2 mt-5 font-poppins font-medium">
             Jl. Soekarno-Hatta, Brangsong Utara, Brangsong, Kec. Brangsong,
             Kabupaten Kendal, Jawa Tengah 51318
           </p>
@@ -71,8 +73,7 @@ export default function Footer() {
           Instagram Kami
         </a>
         <p className="font-poppins text-[1.25rem]">
-          Made By:{" "}
-          <span className="font-poppins font-bold">XIIRPL 3'23 Team</span>
+          Made By:{" "}<span className="font-poppins font-bold">XIIRPL 3'23 Team</span>
         </p>
       </div>
     </section>

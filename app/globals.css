@@ -16,16 +16,26 @@
 
 @theme {
   --font-poppins: "Poppins", sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
+  --font-luckiest: "Luckiest Guy", sans-serif;
 }
 
 @layer components {
+  /* Section Count */
+  .count {
+    @apply font-poppins font-thin leading-none tracking-wide text-[35px];
+  }
+  .head-count {
+    @apply font-poppins font-extrabold text-[20px];
+  }
+  /* Section Footer */
   .input {
     @apply rounded-[10px] bg-white text-gray-950 pl-2 p-2;
   }
   .label {
     @apply font-poppins font-semibold text-[1.25rem];
   }
-  .btn-secondary {
+  .btn-secondary {  /* Button Kirim */
     @apply bg-[#8AAEED] font-poppins font-semibold p-3 rounded-[10px] border-3 border-white cursor-pointer;
   }
 }
