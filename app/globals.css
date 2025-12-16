@@ -21,6 +21,16 @@
 }
 
 @layer components {
+  /* Universal */
+  .head-section {
+    @apply  font-luckiest text-black text-center text-[50px];
+  }
+  .desc-section {
+    @apply font-poppins text-[20px] text-[#9E9E9E] max-w-[680px] mx-auto text-center;
+  }
+  .line-section {
+    @apply w-[50px] h-1 bg-[#638ECB] mt-2 mb-4;
+  }
   /* Section Count */
   .count {
     @apply font-poppins font-thin leading-none tracking-wide text-[35px];
@@ -56,7 +66,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #fff;
     --foreground: #ededed;
   }
 }

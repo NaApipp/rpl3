@@ -3,6 +3,7 @@ import Hero from "./components/hero";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import Count from "./components/count";
+import Prestasi from "./components/prestasi";
 
 export default function Home() {
   return (
@@ -10,8 +11,9 @@ export default function Home() {
       <Navbar />
       <main>
         <Count />
-        <Footer />
+        <Prestasi />
       </main>
+        {/* <Footer /> */}
     </div>
   );
 }
