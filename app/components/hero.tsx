@@ -1,21 +1,11 @@
 "use client";
 import { useRef, useState } from "react";
+import { useBgm } from "../hooks/useBgm";
 
 export default function Hero() {
-    const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const music = () => {
-    if (!audioRef.current) return;
-
-    if (!isPlaying) {
-      audioRef.current.play();
-    } else {
-      audioRef.current.pause();
-    }
-
-    setIsPlaying(!isPlaying);
-  };
+  // BGM Function
+  const { audioRef, isPlaying, music } = useBgm();
+  
 
      const year = new Date().getFullYear();
     return (
