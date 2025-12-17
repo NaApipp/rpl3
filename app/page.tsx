@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import Count from "./components/count";
 import Prestasi from "./components/prestasi";
+import StrukturKelasPage from "./struktur-kelas/strukturKelas";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Count />
+        <StrukturKelasPage/>
         <Prestasi />
       </main>
         {/* <Footer /> */}

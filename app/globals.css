@@ -29,7 +29,7 @@
     @apply font-poppins text-[20px] text-[#9E9E9E] max-w-[680px] mx-auto text-center;
   }
   .line-section {
-    @apply w-[50px] h-1 bg-[#638ECB] mt-2 mb-4;
+    @apply w-[50px] h-1 bg-[#638ECB] mt-2 mb-4 mx-auto;
   }
   /* Section Count */
   .count {
