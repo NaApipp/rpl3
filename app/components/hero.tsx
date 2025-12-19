@@ -1,5 +1,5 @@
 import BackgroundSlider from "./backgroundSlide";
-// import StrukturKelasPage from "./struktur-kelas/strukturKelas";
+
 import Link from "next/link";
 
 export default function Hero() {
