@@ -52,7 +52,7 @@ export const strukturData: StrukturData[] = [
         },
         bendahara2: {
             id: "7",
-            name: "Adyni Karina Agustin",
+            name: "Andyni Karina Agustin",
             position: "BENDAHARA 2"
         }, 
     },
