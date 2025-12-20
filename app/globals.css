@@ -31,6 +31,18 @@
   .line-section {
     @apply w-[50px] h-1 bg-[#638ECB] mt-2 mb-4 mx-auto;
   }
+
+  /* Section Prestasi */
+  .head-prestasi {  /* head Prestasi Default */
+    @apply text-[12px] md:text-2xl font-semibold text-gray-900 leading-snug mb-4;
+  }
+  .name-prestasi {  /* Name Peserta Prestasi Default */
+    @apply text-gray-600 text-[10px] md:text-[16px];
+  }
+  .pretasi-image {  /* Image Prestasi Default */
+    @apply relative md:w-[220px] md:h-[260px] w-[110px] h-[10px]  shrink-0 rounded-xl overflow-hidden;
+  }
+
   /* Section Count */
   .container-count {
     @apply flex flex-col md:flex-row justify-center items-center pt-10 pb-10 md:gap-52 gap-10 justify-center;
