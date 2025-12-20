@@ -14,10 +14,10 @@ export default function Footer() {
   return (
     <section className="bg-[#395886] pt-10 pb-10">
       {/* Container Section  */}
-      <div className="flex justify-center pl-10 pr-10">
+      <div className="flex md:flex-row flex-col justify-center pl-10 pr-10">
         {/* School Infromation */}
-        <div className="w-1/2">
-          <div className="flex gap-5 items-center" id="logo">
+        <div className="md:w-1/2 flex md:flex-col flex-col md:items-start md:justify-start items-center justify-center">
+          <div className="flex gap-5 md:items-center md:justify-start justify-center items-center" id="logo">
             <img
               src="asset/image/logo/logo-skanifo.png"
               loading="lazy"
@@ -26,7 +26,7 @@ export default function Footer() {
             />
             <p className="font-poppins font-bold text-[20px]">SMKN 4 Kendal</p>
           </div>
-          <p className="w-1/2 mt-5 font-poppins font-medium">
+          <p className="md:w-1/2 mt-5 font-poppins font-medium text-center text-justify">
             Jl. Soekarno-Hatta, Brangsong Utara, Brangsong, Kec. Brangsong,
             Kabupaten Kendal, Jawa Tengah 51318
           </p>
@@ -38,8 +38,13 @@ export default function Footer() {
           ></iframe>
         </div>
         {/* Form Section */}
+<<<<<<< HEAD
         <div className="w-1/2 h-max">
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+=======
+        <div className="md:w-1/2 md:h-max mt-7">
+          <form action="" className="flex flex-col gap-4">
+>>>>>>> dev
             <div className="flex flex-col gap-2 w-full " id="field_nama">
               <label htmlFor="nama" className="label">
                 Nama:{" "}
@@ -73,15 +78,18 @@ export default function Footer() {
           </form>
         </div>
       </div>
-      <div className="w-full h-px bg-[#D5DEEF] mt-[100px] mb-3"></div>
+
+      <div className="w-full h-px bg-[#D5DEEF] mt-[100px] mb-3"></div>   {/* Garis Pembatas */}
       {/* Copyright */}
-      <div className="flex justify-between pl-10 pr-10 text-white">
+      <div className="flex md:flex-row flex-col md:justify-between gap-5 items-center flex-col-reverse pl-10 pr-10 text-white">
         <p className="font-bold text-[1.25rem]">
           &copy; Copyright Masterjava <span>{year}</span>
         </p>
         <a
           href="https://www.instagram.com/masterjava.skanifo/"
           className="text-[1.25rem] underline underline-offset-8"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Instagram Kami
         </a>
