@@ -17,7 +17,7 @@ export default function Prestasi() {
       <div className="grid md:grid-cols-2 gap-3 mt-10 ">
         {/* Card */}
         <div className="w-full max-w-2xl bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
-          <div className="flex gap-6 items-start">
+          <div className="flex md:flex-row   gap-6 items-start">
             {/* Image */}
             <div className="relative md:w-[220px] md:h-[260px] w-[110px] h-[10px]  shrink-0 rounded-xl overflow-hidden">
               <img
