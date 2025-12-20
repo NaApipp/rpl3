@@ -20,34 +20,56 @@ export default function VideoSlider() {
   };
 
   return (
-    <div className="relative mx-auto w-full max-w-5xl flex items-center justify-center">
-      
-      {/* Left Button */}
-      <button
-        onClick={prevVideo}
-        className="absolute left-0 -translate-x-12 z-10 flex h-10 w-10 items-center justify-center rounded-full cursor-pointer bg-blue-400 shadow hover:bg-blue-900"
-      >
-        ❮
-      </button>
+    <div className="relative mx-auto w-[90%] max-w-5xl flex items-center justify-center">
 
-      {/* Video Container */}
-      <div className="h-auto w-auto overflow-hidden rounded-lg bg-gray-400">
-        <video
-          key={current}
-          src={videos[current]}
-          controls
-          className="h-auto w-auto object-cover"
-          preload="metadata"
-        />
-      </div>
+  {/* Left Button */}
+  <button
+    onClick={prevVideo}
+    className="
+      absolute
+      left-0 sm:left-0
+      sm:-translate-x-6 lg:-translate-x-12
+      z-10
+      flex h-9 w-9 sm:h-10 sm:w-10
+      items-center justify-center
+      rounded-full
+      bg-blue-400 shadow
+      hover:bg-blue-900
+    "
+  >
+    ❮
+  </button>
 
-      {/* Right Button */}
-      <button
-        onClick={nextVideo}
-        className="absolute right-0 translate-x-12 z-10 flex h-10 w-10 items-center justify-center rounded-full cursor-pointer bg-blue-400 shadow hover:bg-blue-900"
-      >
-        ❯
-      </button>
-    </div>
+  {/* Video Container */}
+  <div className="w-full overflow-hidden rounded-lg bg-gray-400">
+    <video
+      key={current}
+      src={videos[current]}
+      controls
+      className="w-full h-auto object-cover"
+      preload="metadata"
+    />
+  </div>
+
+  {/* Right Button */}
+  <button
+    onClick={nextVideo}
+    className="
+      absolute
+      right-0 sm:right-0
+      sm:translate-x-6 lg:translate-x-12
+      z-10
+      flex h-9 w-9 sm:h-10 sm:w-10
+      items-center justify-center
+      rounded-full
+      bg-blue-400 shadow
+      hover:bg-blue-900
+    "
+  >
+    ❯
+  </button>
+
+</div>
+
   );
 }
