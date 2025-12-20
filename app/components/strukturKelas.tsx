@@ -47,15 +47,15 @@ const StrukturKelas: React.FC = () => {
                     <PersonCard person={currentData.waliKelas} />
                 </div>
             </div>
-             <div className="grid grid-cols-1 md:grid-cols-2 gap-60 max-w-4xl mx-auto">
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-40 lg:gap-60 max-w-4xl mx-auto">
             <PersonCard person={currentData.ketuaKelas} />
             <PersonCard person={currentData.wakilKetuaKelas} />
           </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-60 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-40 lg:gap-60 max-w-4xl mx-auto">
             <PersonCard person={currentData.sekretaris1} />
             <PersonCard person={currentData.sekretaris2} />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-60 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-40 lg:gap-60 max-w-4xl mx-auto">
             <PersonCard person={currentData.bendahara1} />
             <PersonCard person={currentData.bendahara2} />
           </div>
