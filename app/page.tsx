@@ -11,22 +11,22 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Navbar */}
-      {/* <Navbar /> */}
+      <Navbar />
       <main>
         {/* Page Hero */}
-        {/* <Hero /> */}
+        <Hero />
 
         {/* Page Count */}
-        {/* <Count /> */}
+        <Count />
 
         {/* Page Struktur Kelas */}
-        {/* <StrukturKelasPage/> */}
+        <StrukturKelasPage/>
 
         {/* Page Prestasi */}
-        {/* <Prestasi /> */}
+        <Prestasi />
 
         {/* Gallery */}
-        {/* <Gallery /> */}
+        <Gallery />
       </main>
       {/* Footer */}
         <Footer />
