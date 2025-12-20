@@ -19,7 +19,7 @@ export default function Prestasi() {
         <div className="w-full max-w-2xl bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
           <div className="flex md:flex-row   gap-6 items-start">
             {/* Image */}
-            <div className="relative md:w-[220px] md:h-[260px] w-[110px] h-[10px]  shrink-0 rounded-xl overflow-hidden">
+            <div className="relative md:w-[220px] md:h-[260px] w-[110px] h-[130px]  shrink-0 rounded-xl overflow-hidden">
               <img
                 src="asset/image/prestasi/juara-compas.png" // simpan di folder public
                 alt="Juara Pramuka"
@@ -44,7 +44,7 @@ export default function Prestasi() {
         <div className="w-full max-w-2xl bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
           <div className="flex gap-6 items-start">
             {/* Image */}
-            <div className="relative md:w-[220px] md:h-[260px] w-[110px] h-[10px]  shrink-0 rounded-xl overflow-hidden">
+            <div className="relative md:w-[220px] md:h-[260px] w-[110px] h-[130px]  shrink-0 rounded-xl overflow-hidden">
               <img
                 src="asset/image/prestasi/juara-futsal-putra.png" // simpan di folder public
                 alt="Juara Futsal Putra"
@@ -69,7 +69,7 @@ export default function Prestasi() {
         <div className="w-full max-w-2xl bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
           <div className="flex gap-6 items-start">
             {/* Image */}
-            <div className="relative md:w-[220px] md:h-[260px] w-[110px] h-[10px]  shrink-0 rounded-xl overflow-hidden">
+            <div className="relative md:w-[220px] md:h-[260px] w-[110px] h-[130px]  shrink-0 rounded-xl overflow-hidden">
               <img
                 src="asset/image/prestasi/video-poster 1.png" // simpan di folder public
                 alt="Juara Poster Competition"
@@ -96,7 +96,7 @@ export default function Prestasi() {
         <div className="w-full max-w-2xl bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
           <div className="flex gap-6 items-start">
             {/* Image */}
-            <div className="relative md:w-[220px] md:h-[260px] w-[110px] h-[10px]  shrink-0 rounded-xl overflow-hidden">
+            <div className="relative md:w-[220px] md:h-[260px] w-[110px] h-[130px]  shrink-0 rounded-xl overflow-hidden">
               <img
                 src="asset/image/prestasi/fashion-show.png" // simpan di folder public
                 alt="Juara Fashion Show"
@@ -121,7 +121,7 @@ export default function Prestasi() {
         <div className="w-full max-w-2xl bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
           <div className="flex gap-6 items-start">
             {/* Image */}
-            <div className="relative md:w-[220px] md:h-[260px] w-[110px] h-[10px]  shrink-0 rounded-xl overflow-hidden">
+            <div className="relative md:w-[220px] md:h-[260px] w-[110px] h-[130px]  shrink-0 rounded-xl overflow-hidden">
               <img
                 src="asset/image/prestasi/itc-1.png" // simpan di folder public
                 alt="Juara IT Competition"
@@ -146,7 +146,7 @@ export default function Prestasi() {
         <div className="w-full max-w-2xl bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
           <div className="flex gap-6 items-start">
             {/* Image */}
-            <div className="relative md:w-[220px] md:h-[260px] w-[110px] h-[10px]  shrink-0 rounded-xl overflow-hidden">
+            <div className="relative md:w-[220px] md:h-[260px] w-[110px] h-[130px]  shrink-0 rounded-xl overflow-hidden">
               <img
                 src="asset/image/prestasi/tari-smok 1.png" // simpan di folder public
                 alt="Juara Pentas Carnival"
