@@ -1,5 +1,14 @@
+'use client';
+
+import { useState } from 'react';
+import { useMessage } from '@/app/hooks/useMessage';
+
+
 export default function Footer() {
-    // Year Function (biar selalu update) 
+  // Message Form Functionality from Hook
+  const { name, setName, message, setMessage, status, handleSubmit } = useMessage();
+
+  // Year Function (biar selalu update) 
   const year = new Date().getFullYear();
 
   return (
@@ -30,7 +39,7 @@ export default function Footer() {
         </div>
         {/* Form Section */}
         <div className="w-1/2 h-max">
-          <form action="" className="flex flex-col gap-4">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div className="flex flex-col gap-2 w-full " id="field_nama">
               <label htmlFor="nama" className="label">
                 Nama:{" "}
@@ -39,17 +48,21 @@ export default function Footer() {
                 type="text"
                 name="nama"
                 id="nama"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="input"
                 placeholder="Masukkan Nama kalian (Ngga harus nama asli kok >_<)"
               />
             </div>
-            <div className="flex flex-col gap-2 w-full " id="field_message">
+            <div className="flex flex-col gap-2 w-full" id="field_message">
               <label htmlFor="nama" className="label">
                 Pesan:{" "}
               </label>
               <textarea
                 name="message"
                 id="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 className="input h-[150px] resize-none"
                 placeholder="Berikan pesan kalian ke kami :)"
               ></textarea>
