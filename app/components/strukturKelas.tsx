@@ -9,7 +9,7 @@ const StrukturKelas: React.FC = () => {
   const currentData = strukturData[selectedYear];
 
   return (
-    <div id="struktur-Kelas" className="min-h-screen bg-white py-12 px-4">
+    <div id="struktur-kelas" className="min-h-screen bg-white py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <p className="head-section">STRUKTUR KELAS</p>

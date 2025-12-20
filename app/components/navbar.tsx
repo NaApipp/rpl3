@@ -25,9 +25,9 @@ export default function Navbar() {
       <nav className="bg-[#395886] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 -ml-3 md:-ml-0 lg:-ml-0">
             <img src="asset/image/logo/transaparant-logo.png" alt="logo" className="w-16 h-16" />
-            <span className="text-md md:text-lg lg:text-lg font-mono font-bold whitespace-nowrap">
+            <span className="text-xs min-[330px]:text-sm min-[370px]:text-base md:text-base lg:text-lg -ml-2 font-mono font-bold whitespace-nowrap">
               MASTERJAVA RPL 3'23
             </span>
             </div>
@@ -38,7 +38,7 @@ export default function Navbar() {
                 <a
                   key={item.id}
                   href={item.href}
-                  className="px-4 py-2 text-md font-semibold hover:bg-white/10  rounded transition duration-200"
+                  className="px-1.5 min-[880px]:px-2 lg:px-4 py-2 text-xs min-[880px]:text-sm lg:text-md font-semibold hover:bg-white/10  rounded transition duration-200"
                 >
                   {item.name}
                 </a>
