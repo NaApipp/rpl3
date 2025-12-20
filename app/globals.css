@@ -32,6 +32,9 @@
     @apply w-[50px] h-1 bg-[#638ECB] mt-2 mb-4 mx-auto;
   }
   /* Section Count */
+  .container-count {
+    @apply flex flex-col md:flex-row justify-center items-center pt-10 pb-10 md:gap-52 gap-10 justify-center;
+  }
   .count {
     @apply font-poppins font-thin leading-none tracking-wide text-[35px];
   }
