@@ -29,7 +29,7 @@ export function useMessage() {
         return;
       }
 
-      setStatus(`Pesan berhasil dikirim! ID: ${data.id}`);
+      setStatus(`Pesan berhasil dikirim! Terima kasih, ${name}.`);
       setName('');
       setMessage('');
     } catch (err) {
