@@ -8,7 +8,7 @@
   input::placeholder,
   textarea::placeholder {
     color: var(--color-gray-400);
-    padding-left: 8px;
+    /* padding-left: 8px; */
     font-weight: 400;
     font-family: var(--poppins);
   }
@@ -55,13 +55,13 @@
   }
   /* Section Footer */
   .input {
-    @apply rounded-[10px] bg-white text-gray-950 pl-2 p-2;
+    @apply rounded-[10px] bg-white text-gray-950 pl-2 p-2 focus:outline border-2 border-gray-300 focus:border-blue-400 resize-none;
   }
   .label {
     @apply font-poppins font-semibold text-[1.25rem];
   }
   .btn-secondary {  /* Button Kirim */
-    @apply bg-[#8AAEED] font-poppins font-semibold p-3 rounded-[10px] border-3 border-white cursor-pointer;
+    @apply bg-[#8AAEED] font-poppins font-semibold p-3 rounded-[10px] border-3 border-white cursor-pointer hover:bg-[#638ECB] hover:border-white transition;
   }
 }
 

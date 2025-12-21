@@ -1,5 +1,5 @@
-import { NextResponse } from 'next/server';
-import clientPromise from '@/app/lib/mongodb';
+import { NextResponse } from "next/server";
+import clientPromise from "@/app/lib/mongodb";
 
 // Format date to "DD/MM/YYYY HH:MM:SS"
 function formatDate(date: Date) {
@@ -17,39 +17,60 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { name, message } = body;
 
-    if (!name || !message) {
+    // 🔹 Kumpulkan semua error
+    const errors: string[] = [];
+
+    if (!name || !name.trim()) {
+      errors.push("Nama wajib diisi");
+    } else if (name.trim().length < 3) {
+      errors.push("Nama minimal 3 karakter");
+    }
+
+    if (!message || !message.trim()) {
+      errors.push("Pesan wajib diisi");
+    } else if (message.trim().length < 5) {
+      errors.push("Pesan minimal 5 karakter");
+    }
+
+    // Jika ada error, kembalikan semua sekaligus
+    if (errors.length > 0) {
       return NextResponse.json(
-        { error: 'Nama dan pesan wajib diisi' },
+        {
+          errorCode: "VALIDATION_ERROR",
+          errors,
+        },
         { status: 400 }
       );
     }
 
     const client = await clientPromise;
-    const db = client.db('portfolio-kelas');
-    const collection = db.collection('messages');
+    const db = client.db("portfolio-kelas");
+    const collection = db.collection("messages");
 
-    // function to format date
     const formattedDate = formatDate(new Date());
 
     const result = await collection.insertOne({
-      name,
-      message,
+      name: name.trim(),
+      message: message.trim(),
       message_date: formattedDate,
     });
 
     return NextResponse.json(
-      { success: true, id: result.insertedId },
+      {
+        success: true,
+        id: result.insertedId,
+      },
       { status: 200 }
     );
   } catch (error) {
-    console.error(error);
+    console.error("POST /messages error:", error);
+
     return NextResponse.json(
-      { error: 'Gagal menyimpan data' },
+      {
+        errorCode: "SERVER_ERROR",
+        message: "Terjadi kesalahan pada server",
+      },
       { status: 500 }
     );
   }
 }
-
-
-
-

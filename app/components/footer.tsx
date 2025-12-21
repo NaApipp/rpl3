@@ -1,14 +1,23 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { useMessage } from '@/app/hooks/useMessage';
-
+import { useState } from "react";
+import { useMessage } from "@/app/hooks/useMessage";
 
 export default function Footer() {
   // Message Form Functionality from Hook
-  const { name, setName, message, setMessage, status, handleSubmit } = useMessage();
+  const {
+    name,
+    setName,
+    message,
+    setMessage,
+    status,
+    statusType,
+    handleSubmit,
+  } = useMessage();
 
-  // Year Function (biar selalu update) 
+
+ 
+  // Year Function (biar selalu update)
   const year = new Date().getFullYear();
 
   return (
@@ -17,7 +26,10 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row justify-center pl-10 pr-10">
         {/* School Infromation */}
         <div className="md:w-1/2 flex md:flex-col flex-col md:items-start md:justify-start items-center justify-center">
-          <div className="flex gap-5 md:items-center md:justify-start justify-center items-center" id="logo">
+          <div
+            className="flex gap-5 md:items-center md:justify-start justify-center items-center"
+            id="logo"
+          >
             <img
               src="asset/image/logo/logo-skanifo.png"
               loading="lazy"
@@ -70,7 +82,16 @@ export default function Footer() {
             <button type="submit" className="btn-secondary">
               Kirim
             </button>
-            {status && <p className='text-center'>{status}</p>}
+            {/* Alert Status */}
+            {status && (
+              <p
+                className={`mt-2 font-poppins font-semibold text-center  ${
+                  statusType === "success" ? "text-green-600" : "text-red-500"
+                }`}
+              >
+                {status}
+              </p>
+            )}
           </form>
         </div>
       </div>
@@ -89,7 +110,8 @@ export default function Footer() {
           Instagram Kami
         </a>
         <p className="font-poppins text-[1.25rem]">
-          Made By:{" "}<span className="font-poppins font-bold">XIIRPL 3'23 Team</span>
+          Made By:{" "}
+          <span className="font-poppins font-bold">XIIRPL 3'23 Team</span>
         </p>
       </div>
     </section>
