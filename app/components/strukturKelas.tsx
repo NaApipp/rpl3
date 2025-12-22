@@ -23,7 +23,7 @@ const StrukturKelas: React.FC = () => {
         </div>
 
         <div className="text-center mb-12">
-          <h2 className="font-poppins text-[30px] text-black mb-4">Tahun Ajaran</h2>
+          <h2 className="font-poppins font-extrabold text-[30px] text-black mb-4">Tahun Ajaran</h2>
           <div className="flex justify-center gap-4 flex-wrap">
             {strukturData.map((data, index) => (
               <button
