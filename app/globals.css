@@ -31,7 +31,9 @@
   .line-section {
     @apply w-[50px] h-1 bg-[#638ECB] mt-2 mb-4 mx-auto;
   }
-
+  .typingText {
+    @apply text-white font-poppins font-extrabold md:text-[70px] text-[50px];
+  }
   /* Section Prestasi */
   .head-prestasi {  /* head Prestasi Default */
     @apply text-[12px] md:text-2xl font-semibold text-gray-900 leading-snug mb-4;
