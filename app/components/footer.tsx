@@ -103,7 +103,7 @@ export default function Footer() {
         </p>
         <a
           href="https://www.instagram.com/masterjava.skanifo/"
-          className="text-[1.25rem] underline underline-offset-8"
+          className="text-[1.25rem] underline underline-offset-8 text-white hover:text-white/45 transition"
           target="_blank"
           rel="noopener noreferrer"
         >
