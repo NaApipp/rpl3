@@ -111,7 +111,7 @@ export default function Gallery() {
 
       {/* VIDEO SLIDER */}
       <div className="max-w-7xl mx-auto px-4 mt-20">
-        <h1 className="head-section mb-5">Best Moment in Video</h1>
+        <h1 className="head-section mb-5 text-[30px] md:text-[50px]">Best Moment in Video</h1>
         <VideoSlider />
       </div>
     </section>

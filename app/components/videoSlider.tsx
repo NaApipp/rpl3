@@ -20,56 +20,51 @@ export default function VideoSlider() {
   };
 
   return (
-    <div className="relative mx-auto w-[90%] max-w-5xl flex items-center justify-center">
+    <div className="mx-auto w-[90%] max-w-5xl">
+      
+      {/* Video Container */}
+      <div className="overflow-hidden rounded-lg bg-gray-400">
+        <video
+          key={current}
+          src={videos[current]}
+          controls
+          className="w-full h-auto object-cover"
+          preload="metadata"
+        />
+      </div>
 
-  {/* Left Button */}
-  <button
-    onClick={prevVideo}
-    className="
-      absolute
-      left-0 sm:left-0
-      sm:-translate-x-6 lg:-translate-x-12
-      z-10
-      flex h-9 w-9 sm:h-10 sm:w-10
-      items-center justify-center
-      rounded-full
-      bg-blue-400 shadow
-      hover:bg-blue-900
-    "
-  >
-    ❮
-  </button>
+      {/* Pagination Controls */}
+      <div className="mt-4 flex items-center justify-center gap-6">
+        <button
+          onClick={prevVideo}
+          className="
+            flex h-10 w-10 items-center justify-center
+            rounded-full
+            bg-blue-400 shadow
+            hover:bg-blue-900
+            transition
+          "
+        >
+          ❮
+        </button>
 
-  {/* Video Container */}
-  <div className="w-full overflow-hidden rounded-lg bg-gray-400">
-    <video
-      key={current}
-      src={videos[current]}
-      controls
-      className="w-full h-auto object-cover"
-      preload="metadata"
-    />
-  </div>
+        <span className="text-sm font-poppins font-normal text-gray-600">
+          {current + 1} / {videos.length}
+        </span>
 
-  {/* Right Button */}
-  <button
-    onClick={nextVideo}
-    className="
-      absolute
-      right-0 sm:right-0
-      sm:translate-x-6 lg:translate-x-12
-      z-10
-      flex h-9 w-9 sm:h-10 sm:w-10
-      items-center justify-center
-      rounded-full
-      bg-blue-400 shadow
-      hover:bg-blue-900
-    "
-  >
-    ❯
-  </button>
-
-</div>
-
+        <button
+          onClick={nextVideo}
+          className="
+            flex h-10 w-10 items-center justify-center
+            rounded-full
+            bg-blue-400 shadow
+            hover:bg-blue-900
+            transition
+          "
+        >
+          ❯
+        </button>
+      </div>
+    </div>
   );
 }
