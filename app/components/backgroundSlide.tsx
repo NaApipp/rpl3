@@ -6,6 +6,7 @@ const images = [
   "asset/image/hero/bg-hero-1.png",
   "asset/image/hero/bg-hero-2.png",
   "asset/image/hero/bg-hero-3.png",
+  "asset/image/hero/bg-hero-4.png",
 ];
 
 export default function BackgroundSlider() {

@@ -43,6 +43,7 @@ export default function VideoSlider() {
             bg-blue-400 shadow
             hover:bg-blue-900
             transition
+            cursor-pointer
           "
         >
           ❮
@@ -60,6 +61,7 @@ export default function VideoSlider() {
             bg-blue-400 shadow
             hover:bg-blue-900
             transition
+            cursor-pointer
           "
         >
           ❯
