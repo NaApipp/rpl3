@@ -6,6 +6,7 @@ import Count from "./components/count";
 import Prestasi from "./components/prestasi";
 import StrukturKelasPage from "./struktur-kelas/strukturKelas";
 import Gallery from "./components/gallery";
+import Member from "./components/member";
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
 
         {/* Page Prestasi */}
         <Prestasi />
+        
+        {/* Page Member */}
+       <Member />
 
         {/* Gallery */}
         <Gallery />
