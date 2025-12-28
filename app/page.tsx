@@ -8,7 +8,18 @@ import StrukturKelasPage from "./struktur-kelas/strukturKelas";
 import Gallery from "./components/gallery";
 import Member from "./components/member";
 
-export default function Home() {
+
+export default async function Home() {
+
+
+
+
+  await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("intenational delay");
+    }, 4000);
+  });
+
   return (
     <div className="min-h-screen">
       {/* Navbar */}

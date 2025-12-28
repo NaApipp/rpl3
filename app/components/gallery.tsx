@@ -77,7 +77,7 @@ export default function Gallery() {
           <button
             onClick={() => setPage((p) => Math.max(p - 1, 1))}
             disabled={page === 1}
-            className="px-4 py-2 text-sm font-poppins font-extrabold bg-[#638ECB] hover:bg-[#395886] text-white cursor-pointer rounded disabled:bg-gray-300 disabled:text-white disabled:cursor-default transition"
+            className="px-4 py-2 text-sm font-poppins font-extrabold bg-[#638ECB] hover:bg-[#395886] text-white cursor-pointer rounded disabled:bg-gray-300 disabled:text-white disabled:cursor-not-allowed transition"
           >
             Previous
           </button>
@@ -102,7 +102,7 @@ export default function Gallery() {
           <button
             onClick={() => setPage((p) => Math.min(p + 1, totalPages))}
             disabled={page === totalPages}
-            className="px-4 py-2 text-sm font-poppins font-extrabold bg-[#638ECB] hover:bg-[#395886] text-white cursor-pointer rounded disabled:bg-gray-300 disabled:text-white disabled:cursor-default transition"
+            className="px-4 py-2 text-sm font-poppins font-extrabold bg-[#638ECB] hover:bg-[#395886] text-white cursor-pointer rounded disabled:bg-gray-300 disabled:text-white disabled:cursor-not-allowed transition"
           >
             Next
           </button>

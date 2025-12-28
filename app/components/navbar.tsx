@@ -45,7 +45,7 @@ export default function Navbar() {
               ))}
               <button
                 onClick={music}
-                className={`ml-2 p-2 border-2 border-white rounded-lg transition duration-200 ${
+                className={`ml-2 p-2 border-2 border-white rounded-lg transition duration-200 cursor-pointer ${
                   isPlaying ? "bg-white text-[#2c4563]" : "hover:bg-white/10"
                 }`}
               >
@@ -57,7 +57,7 @@ export default function Navbar() {
               <div className="md:hidden flex items-center space-x-2">
                  <button
                 onClick={music}
-                className={`p-2 border-2 border-white/90 rounded-lg transition duration-200 ${
+                className={`p-2 border-2 border-white/90 rounded-lg transition duration-200 cursor-pointer${
                   isPlaying ? "bg-white text-[#395886]" : "hover:bg-white/10"
                 }`}
               >
