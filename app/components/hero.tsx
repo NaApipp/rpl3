@@ -23,8 +23,8 @@ export default function Hero() {
           />
         </h1>
         <p className="text-white font-poppins font-semibold md:text-[20px]">
-          Kelas Rekayasa Perangkat Lunak <br /> yang inovatif dan kreatif, dan
-          suka ajak ribut
+          Kelas Rekayasa Perangkat Lunak <br /> yang inovatif, dan
+          Kreatif dalam Ide, Tangguh dalam Eksekusi
         </p>
         {/* Button direct section struktur kelas */}
         <Link
