@@ -306,7 +306,7 @@ but say "jika semua ada waktu untuk bertemu aku akan menunggu, Semua benda di du
               disabled={currentPage === 1}
               className={`p-2 rounded-lg transition-colors ${
                 currentPage === 1
-                  ? "bg-gray-300 text-white cursor-default transition"
+                  ? "bg-gray-300 text-white cursor-default transition cursor-not-allowed"
                   : "bg-[#638ECB] hover:bg-[#395886] font-extrabold text-white cursor-pointer"
               }`}
             >
@@ -319,7 +319,7 @@ but say "jika semua ada waktu untuk bertemu aku akan menunggu, Semua benda di du
                 onClick={() => goToPage(index + 1)}
                 className={`px-3 md:px-4 py-2 rounded-lg text-sm font-poppins font-extrabold transition-colors ${
                   currentPage === index + 1
-                    ? "bg-[#638ECB] text-white"
+                    ? "bg-[#638ECB] text-white cursor-not-allowed"
                     : "bg-gray-200 text-gray-600 hover:bg-gray-500 hover:text-gray-200 cursor-pointer"
                 }`}
               >
@@ -332,7 +332,7 @@ but say "jika semua ada waktu untuk bertemu aku akan menunggu, Semua benda di du
               disabled={currentPage === totalPages}
               className={`p-2 rounded-lg transition-colors ${
                 currentPage === totalPages
-                  ? "bg-gray-300 text-white cursor-default transition"
+                  ? "bg-gray-300 text-white cursor-default transition cursor-not-allowed"
                   : "bg-[#638ECB] hover:bg-[#395886] font-extrabold text-white cursor-pointer"
               }`}
             >
