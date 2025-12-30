@@ -22,6 +22,7 @@ const images = [
   "/asset/image/gallery/2/image4-page2.png",
   "/asset/image/gallery/2/image5-page2.png",
   "/asset/image/gallery/2/image6-page2.png",
+  "/asset/image/gallery/2/image7-page2.png",
 ];
 
 
