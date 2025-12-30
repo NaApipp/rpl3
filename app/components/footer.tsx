@@ -15,8 +15,6 @@ export default function Footer() {
     handleSubmit,
   } = useMessage();
 
-
- 
   // Year Function (biar selalu update)
   const year = new Date().getFullYear();
 
@@ -45,7 +43,7 @@ export default function Footer() {
           {/* Embed GMaps */}
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.5298675353183!2d110.22777177414194!3d-6.946648368003845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e705d9c2a3b439b%3A0xcd3827ba60db3c5!2sSMK%20Negeri%204%20Kendal!5e0!3m2!1sid!2sid!4v1765710509567!5m2!1sid!2sid"
-            className="w-[250px] h-[190px] mt-5 rounded-lg"
+            className="w-max h-[200px] mt-5 rounded-lg"
             loading="lazy"
           ></iframe>
         </div>
