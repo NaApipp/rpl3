@@ -12,9 +12,11 @@ export default function Footer() {
     setMessage,
     status,
     statusType,
+    isSubmitting,
     handleSubmit,
   } = useMessage();
 
+  
   // Year Function (biar selalu update)
   const year = new Date().getFullYear();
 
