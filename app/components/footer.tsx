@@ -47,9 +47,13 @@ export default function Footer() {
             loading="lazy"
           ></iframe>
         </div>
+        <div className="w-full h-px bg-[#D5DEEF] mt-[50px] mb-[50px] md:hidden" />
         {/* Form Section */}
-        <div className="md:w-1/2 md:h-max mt-7">
+        <div className="md:w-1/2 md:h-max">
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+            <h1 className="text-center text font-bold mb-4 font-poppins ">
+              Berikan Pesan Kalian Kepada Kami.
+            </h1>
             <div className="flex flex-col gap-2 w-full " id="field_nama">
               <label htmlFor="nama" className="label">
                 Nama:{" "}
