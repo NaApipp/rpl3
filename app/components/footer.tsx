@@ -19,7 +19,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <section className="bg-[#395886] pt-10 pb-10">
+    <section className="bg-[#395886] pt-10 pb-10 text-white">
       {/* Container Section  */}
       <div className="flex flex-col md:flex-row justify-center pl-10 pr-10">
         {/* School Infromation */}
