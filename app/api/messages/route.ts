@@ -2,17 +2,25 @@ import { NextResponse } from "next/server";
 import clientPromise from "@/app/lib/mongodb";
 
 // Format date to "DD/MM/YYYY HH:MM:SS"
-function formatDate(date: Date) {
-  const d = date.getDate().toString().padStart(2, "0");
-  const m = (date.getMonth() + 1).toString().padStart(2, "0");
-  const y = date.getFullYear();
-  const h = date.getHours().toString().padStart(2, "0");
-  const min = date.getMinutes().toString().padStart(2, "0");
-  const s = date.getSeconds().toString().padStart(2, "0");
-  return `${d}/${m}/${y} ${h}:${min}:${s}`;
+function formatDateWIB(date: Date) {
+  const fmt = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Asia/Jakarta",
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  });
+
+  const parts = fmt.formatToParts(date);
+  const map: Record<string, string> = {};
+  for (const p of parts) map[p.type] = p.value;
+
+  return `${map.day}/${map.month}/${map.year} ${map.hour}:${map.minute}:${map.second}`;
 }
 
-const now = new Date();
 
 export async function POST(request: Request) {
   try {
@@ -49,12 +57,13 @@ export async function POST(request: Request) {
     const db = client.db("portfolio-kelas");
     const collection = db.collection("messages");
 
-    const formattedDate = formatDate(new Date());
+    const formattedDate = formatDateWIB(new Date());
+
 
     const result = await collection.insertOne({
       name: name.trim(),
       message: message.trim(),
-      message_date: now,
+      message_date: formattedDate,
     });
 
     return NextResponse.json(
