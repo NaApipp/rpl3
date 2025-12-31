@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 
 export default function Count() {
   return (
-    <div className="container-count flex bg-[#638ECB]  rounded-lg text-white">
+    <div className="container-count flex bg-[#638ECB] text-white">
       <div className="aktif text-center">
         <p className="count">
           <CountUp end={36} duration={7} scrollSpyOnce />
