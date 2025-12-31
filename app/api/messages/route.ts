@@ -12,6 +12,8 @@ function formatDate(date: Date) {
   return `${d}/${m}/${y} ${h}:${min}:${s}`;
 }
 
+const now = new Date();
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -52,7 +54,7 @@ export async function POST(request: Request) {
     const result = await collection.insertOne({
       name: name.trim(),
       message: message.trim(),
-      message_date: formattedDate,
+      message_date: now,
     });
 
     return NextResponse.json(
