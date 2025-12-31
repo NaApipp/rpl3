@@ -1,27 +1,39 @@
 "use client";
-import { useRef, useState } from "react";
-import { useBgm } from "../hooks/useBgm";
+import Link from "next/link";
+import BackgroundSlider from "./backgroundSlide";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
-  // BGM Function
-  const { audioRef, isPlaying, music } = useBgm();
-  
-
-     const year = new Date().getFullYear();
-    return (
-        <section id="hero">
-            <div className="flex flex-col justify-center items-center mt-9">
-                <img src="image\construction.png" alt="Development Icon" className="w-[200px]"/>
-                <h1 className="mt-[20px] font-extrabold text-3xl">Halaman Masih Dalam Tahap Pengembangan</h1>
-                <h1 className="mt-[5px] font-extrabold text-3xl">🙏🏻🙏🏻🙏🏻</h1>
-                <div className="bgm">
-                    <button onClick={music} className="mt-6 border-solid border-2 p-2 rounded-2xl cursor-pointer">
-                    {isPlaying ? "Pause BGM" : "Play BGM"}
-                    </button>
-                </div>
-                <p className="mt-[200px]"><span>&copy; {year}</span> XIIRPL 3'23 Team</p>
-            </div>
-            <audio ref={audioRef} src="bgm\bgm-waitingv2.mp3" loop></audio>        
-            </section>
-    )
+  return (
+    <section
+      id="home"
+        className="relative min-h-screen flex items-center justify-center text-white"
+    >
+      {/* Background Slide Function */}
+      <BackgroundSlider />
+      
+      <div className="z-10 text-center flex gap-30 flex-col justify-center items-center">
+        {/* Typing Animation HeadText */}
+        <h1 className="typingText">
+          <TypeAnimation
+            sequence={["XII RPL 3", 2000, "Angkatan 23", 2000]}
+            speed={50}
+            deletionSpeed={50}
+            repeat={Infinity}
+          />
+        </h1>
+        <p className="text-white font-poppins font-semibold md:text-[20px]">
+          Kelas Rekayasa Perangkat Lunak <br /> yang inovatif, dan
+          Kreatif dalam Ide, Tangguh dalam Eksekusi
+        </p>
+        {/* Button direct section struktur kelas */}
+        <Link
+          href="#struktur-kelas"
+          className="p-2 border border-4 md:w-[500px] w-[250px] font-poppins font-semibold text-[20px] rounded-[20px] hover:bg-white/70 hover:text-black transition" 
+        >
+          Lihat Lainnya
+        </Link>
+      </div>
+    </section>
+  );
 }
