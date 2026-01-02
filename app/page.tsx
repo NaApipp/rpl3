@@ -22,20 +22,18 @@ export default function Home() {
     <>
       <Head>
         <title>RPL 3 - SMKN 4 Kendal (Angkatan 23)</title>
+
         <meta
           name="description"
           content="Profil Kelas RPL 3 Angkatan 23 SMKN 4 Kendal: struktur kelas, anggota, prestasi, dan galeri kegiatan."
         />
+
         <link rel="canonical" href={siteUrl} />
         <meta name="robots" content="index,follow" />
 
         <meta
           property="og:title"
-          content="RPL 3 - SMKN 4 Kendal (Angkatan 23)"
-        />
-        <meta
-          property="og:title"
-          content="RPL 3 - Skanifo (Angkatan 23)"
+          content="RPL 3 - SKANIFO (Angkatan 23)"
         />
         <meta
           property="og:description"
@@ -43,6 +41,10 @@ export default function Home() {
         />
         <meta property="og:url" content={siteUrl} />
         <meta property="og:type" content="website" />
+
+        {/* opsional */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
       </Head>
       <div className="min-h-screen">
         {/* Navbar */}
