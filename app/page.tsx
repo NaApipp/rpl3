@@ -31,10 +31,7 @@ export default function Home() {
         <link rel="canonical" href={siteUrl} />
         <meta name="robots" content="index,follow" />
 
-        <meta
-          property="og:title"
-          content="RPL 3 - SKANIFO (Angkatan 23)"
-        />
+        <meta property="og:title" content="RPL 3 - SKANIFO (Angkatan 23)" />
         <meta
           property="og:description"
           content="Struktur, member, prestasi, dan galeri milik kelas RPL 3 Angkatan 23."
@@ -45,6 +42,17 @@ export default function Home() {
         {/* opsional */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "RPL 3 - SMKN 4 Kendal (Angkatan 23)",
+              url: "https://rpl3-23.vercel.app/",
+            }),
+          }}
+        />
       </Head>
       <div className="min-h-screen">
         {/* Navbar */}
