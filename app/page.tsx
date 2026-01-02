@@ -10,7 +10,7 @@ import Member from "./components/member";
 import Head from "next/head";
 
 export default function Home() {
-  const siteUrl = "https://rpl3-23.vercel.app/"; // ganti sesuai domainmu
+  const siteUrl = "https://rpl3-23.vercel.app/";
 
   // await new Promise((resolve) => {
   //   setTimeout(() => {
@@ -24,7 +24,7 @@ export default function Home() {
         <title>RPL 3 - SMKN 4 Kendal (Angkatan 23)</title>
         <meta
           name="description"
-          content="Profil kelas RPL 3 Angkatan 23 SMKN 4 Kendal: struktur, member, prestasi, dan galeri."
+          content="Profil Kelas RPL 3 Angkatan 23 SMKN 4 Kendal: struktur kelas, anggota, prestasi, dan galeri kegiatan."
         />
         <link rel="canonical" href={siteUrl} />
         <meta name="robots" content="index,follow" />
@@ -34,8 +34,12 @@ export default function Home() {
           content="RPL 3 - SMKN 4 Kendal (Angkatan 23)"
         />
         <meta
+          property="og:title"
+          content="RPL 3 - Skanifo (Angkatan 23)"
+        />
+        <meta
           property="og:description"
-          content="Struktur, member, prestasi, dan galeri kelas RPL 3 Angkatan 23."
+          content="Struktur, member, prestasi, dan galeri milik kelas RPL 3 Angkatan 23."
         />
         <meta property="og:url" content={siteUrl} />
         <meta property="og:type" content="website" />
